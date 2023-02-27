@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_pointer_itoa.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 00:19:50 by feralves          #+#    #+#             */
-/*   Updated: 2022/08/20 00:18:52 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:40:22 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,13 @@
 static int	ft_counter(unsigned long int number);
 static void	ft_write(int size, char *string, unsigned long int n);
 
+/**
+*@brief Allocates and returns a string representing the unsigned long integer 
+*received as an argument
+*@param n: the unsigned long integer to convert
+*@return the string representing the unsigned long integer. NULL if the 
+*allocation fails
+*/
 char	*ft_pointer_itoa(unsigned long int n)
 {
 	int		size;

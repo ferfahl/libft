@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 20:27:33 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/10 19:28:12 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:15 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 *@param fd: The file descriptor on which to write
 *@return none
 */
-
 void	ft_putnbr_fd(int n, int fd)
 {
 	unsigned int	uns_n;

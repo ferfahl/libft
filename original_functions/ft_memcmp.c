@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 21:54:46 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/10 20:16:22 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:03 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
 *@return a pointer to the matching byte or NULL if the character does not occur
 *in the given memory area
 */
-
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t		count;

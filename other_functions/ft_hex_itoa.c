@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hex_itoa.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 00:19:50 by feralves          #+#    #+#             */
-/*   Updated: 2022/08/20 00:18:21 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:39:41 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 static int	ft_counter(unsigned int number);
 static void	ft_write(int size, char *string, unsigned int n);
 
+/**
+*@brief Allocates and returns a string representing the hexadecimal received as 
+*an argument
+*@param n: the hexadecimal to convert
+*@return the string representing the hexadecimal. NULL if the allocation fails
+*/
 char	*ft_hex_itoa(unsigned int n)
 {
 	int		size;

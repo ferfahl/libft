@@ -20,5 +20,4 @@
 *@param del: The address of the function used to delete the content of the node
 *@return none
 */
-
 void	ft_lstclear(t_list **lst, void (*del)(void *));

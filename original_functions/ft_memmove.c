@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 22:01:06 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/10 20:19:11 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:07 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
 *@param n Number of bytes to be moved.
 *@return a pointer to dest
 */
-
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*dest2;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 05:09:06 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/10 20:11:31 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:23:42 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 *@param c Character as an integer
 *@return nonzero if the character c falls into the tested class, and zero if not
 */
-
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)

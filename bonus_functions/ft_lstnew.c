@@ -19,7 +19,6 @@
 *@param content The content to create the node with
 *@return the new node
 */
-
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;

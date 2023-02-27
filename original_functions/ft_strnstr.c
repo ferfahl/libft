@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 00:04:48 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/10 20:13:57 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:32:41 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
 *nowhere in 'big', NULL is returned, otherwise a pointer to the first
 *character of the first occurrence of 'little' is returned.
 */
-
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	index;

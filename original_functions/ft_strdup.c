@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:01:35 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/13 23:26:04 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:30 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 *@return Pointer to the duplicated string, or NULL if insufficient memory was
 *available
 */
-
 char	*ft_strdup(const char *s)
 {
 	char	*duplicate;

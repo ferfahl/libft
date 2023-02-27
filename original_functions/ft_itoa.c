@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 00:19:50 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/13 23:26:11 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:23:56 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_counter(int number);
+static void	ft_write(int size, int negative, char *string, int n);
 
 /**
 *@brief Allocates and returns a string representing the integer received as an
@@ -18,10 +21,6 @@
 *@param n: the integer to convert
 *@return the string representing the integer. NULL if the allocation fails
 */
-
-static int	ft_counter(int number);
-static void	ft_write(int size, int negative, char *string, int n);
-
 char	*ft_itoa(int n)
 {
 	int		size;

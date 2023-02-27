@@ -17,7 +17,6 @@
 *@param lst: The beginning of the list
 *@return Last node of the list
 */
-
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

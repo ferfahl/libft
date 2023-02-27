@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_uitoa.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 00:19:50 by feralves          #+#    #+#             */
-/*   Updated: 2022/08/19 22:53:08 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:38:47 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,13 @@
 static int	ft_counter(unsigned int number);
 static void	ft_write(int size, char *string, unsigned int n);
 
+/**
+*@brief Allocates and returns a string representing the unsigned integer 
+*received as an argument
+*@param n: the unsigned integer to convert
+*@return the string representing the unsigned integer. NULL if the allocation 
+*fails
+*/
 char	*ft_uitoa(unsigned int n)
 {
 	int		size;

@@ -6,7 +6,7 @@
 /*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 21:08:12 by feralves          #+#    #+#             */
-/*   Updated: 2022/11/27 19:59:06 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:37:49 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 *@param set: The reference set of characters to trim.
 *@return The trimmed string. NULL if the allocation fails.
 */
-
 char	*ft_strtrim_mod(char *s1, char const *set)
 {
 	int		start;

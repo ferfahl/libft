@@ -20,5 +20,4 @@
 *@param del: The address of the function used to delete the content
 *@return none
 */
-
 void	ft_lstdelone(t_list *lst, void (*del)(void *));

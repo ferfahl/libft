@@ -14,10 +14,12 @@
 # define FT_PRINTF_H
 
 //Libraries
+
 # include "../libft.h"
 # include <stdarg.h>
 
 //Functions
+
 int	ft_print_char(va_list args);
 int	ft_print_hexadecimal(va_list args, char placeholder);
 int	ft_print_integer(va_list args);

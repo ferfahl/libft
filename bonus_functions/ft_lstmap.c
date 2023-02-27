@@ -23,5 +23,4 @@
 *needed
 *@return The new list. / NULL if the allocation fails.
 */
-
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));

@@ -6,7 +6,7 @@
 /*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:20:52 by feralves          #+#    #+#             */
-/*   Updated: 2022/12/18 18:09:38 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:16 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 *@param fd: The file descriptor on which to write
 *@return none
 */
-
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)

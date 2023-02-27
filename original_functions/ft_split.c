@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 21:09:53 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/10 20:21:00 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:24 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static void	*ft_freeall(char **dest, int index);
+static void	ft_word(char **dest, char const *src, char c);
 
 /**
 *@brief allocates and returns an array of strings obtained by splitting ’s’
@@ -20,10 +23,6 @@
 *@return array of new strings resulting from the split. NULL if the allocation
 *fails
 */
-
-static void	*ft_freeall(char **dest, int index);
-static void	ft_word(char **dest, char const *src, char c);
-
 char	**ft_split(char const *s, char c)
 {
 	char	**list;

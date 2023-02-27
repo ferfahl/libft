@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 21:13:32 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/10 20:15:34 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:01 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@
 *@return Pointer to the matching byte or NULL if the character does not occur
 *in the given memory area.
 */
-
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*str;

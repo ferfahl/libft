@@ -6,7 +6,7 @@
 /*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/19 19:15:24 by feralves          #+#    #+#             */
-/*   Updated: 2022/12/18 18:11:07 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:11 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 *@param fd: The file descriptor on which to write.
 *@return none
 */
-
 void	ft_putchar_fd(char c, int fd)
 {
 	if (!c)

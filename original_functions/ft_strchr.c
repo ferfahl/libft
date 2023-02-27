@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 18:18:48 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/13 23:27:16 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:28 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@
  * if 'c' is specified as '\0', these functions return a pointer to the
  * terminator.
 */
-
 char	*ft_strchr(const char *s, int c)
 {
 	char	*str;

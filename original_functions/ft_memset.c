@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: feralves < feralves@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 03:00:47 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/10 20:20:11 by feralves         ###   ########.fr       */
+/*   Updated: 2023/02/26 19:24:09 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 *@param n Number of bytes to be replaced.
 *@return Pointer to the replaced memory area.
 */
-
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			count;
