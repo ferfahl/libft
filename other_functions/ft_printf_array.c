@@ -12,6 +12,11 @@
 
 #include "libft.h"
 
+/**
+*@brief using ft_printf, this function prints an array passed.
+*@param array the item to be printed
+*@return none.
+*/
 void	ft_printf_array(char **array)
 {
 	int	index;

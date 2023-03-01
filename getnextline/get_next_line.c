@@ -6,12 +6,17 @@
 /*   By: feralves <feralves@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/31 06:49:03 by feralves          #+#    #+#             */
-/*   Updated: 2022/10/16 20:12:54 by feralves         ###   ########.fr       */
+/*   Updated: 2023/03/01 12:55:19 by feralves         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
+/**
+*@brief reads the given fd according to the size of BUFFER
+*@param fd: The file descriptor to read from
+*@return the line read
+*/
 char	*ft_read(int fd)
 {
 	char	*the_reader;
@@ -39,6 +44,12 @@ char	*ft_read(int fd)
 	return (free(the_reader), line_read);
 }
 
+/**
+*@brief splits the line given when encounters an ending (\n or \0)
+*@param aux_temp a temporary line read that will be splited
+*@param overrrun a line of static size that stores the rest of the line splitted
+*@return the splitted line
+*/
 char	*ft_split_line(char *aux_temp, char **overrun)
 {
 	char	*dest;
@@ -67,6 +78,12 @@ char	*ft_split_line(char *aux_temp, char **overrun)
 	return (dest);
 }
 
+/**
+*@brief the main function that the gnl function calls to
+*@param fd: The file descriptor to read from
+*@return Read line: correct behavior; NULL: there is nothing else to read, or
+*an error occurred
+*/
 char	*ft_return_line(int fd)
 {
 	char		*line_read;
@@ -91,6 +108,12 @@ char	*ft_return_line(int fd)
 	return (free(aux_temp), dest);
 }
 
+/**
+*@brief function that returns a line read from a file descriptor
+*@param fd: The file descriptor to read from
+*@return Read line: correct behavior; NULL: there is nothing else to read, or
+*an error occurred
+*/
 char	*get_next_line(int fd)
 {
 	char	*dest;

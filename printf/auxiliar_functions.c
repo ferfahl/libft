@@ -12,6 +12,11 @@
 
 #include "ft_printf.h"
 
+/**
+*@brief prints the a character from ft_printf
+*@param args the list of args recieved from the input
+*@return size of the string printed
+*/
 int	ft_print_char(va_list args)
 {
 	int	alpha;
@@ -21,6 +26,11 @@ int	ft_print_char(va_list args)
 	return (1);
 }
 
+/**
+*@brief prints a string from ft_printf
+*@param args the list of args recieved from the input
+*@return size of the string printed
+*/
 int	ft_print_string(va_list args)
 {
 	char	*string;
@@ -34,6 +44,11 @@ int	ft_print_string(va_list args)
 	return (ft_strlen(string));
 }
 
+/**
+*@brief prints a number from ft_printf
+*@param args the list of args recieved from the input
+*@return size of the string printed
+*/
 int	ft_print_integer(va_list args)
 {
 	int		number;
@@ -48,6 +63,11 @@ int	ft_print_integer(va_list args)
 	return (size);
 }
 
+/**
+*@brief prints unsigned interger from ft_printf
+*@param args the list of args recieved from the input
+*@return size of the string printed
+*/
 int	ft_print_unsigned(va_list args)
 {
 	unsigned int	number;

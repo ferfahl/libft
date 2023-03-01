@@ -12,6 +12,12 @@
 
 #include "ft_printf.h"
 
+/**
+*@brief searches and assign the placeholder to a specific function
+*@param placeholder the character that follows %
+*@param args the list of args recieved from the input
+*@return size of the string printed
+*/
 int	search_placeholder(char placeholder, va_list args)
 {
 	int	count;
@@ -33,6 +39,12 @@ int	search_placeholder(char placeholder, va_list args)
 	return (count);
 }
 
+/**
+*@brief prints the given string using the % to refer to an argument passed
+*@param format the passed string between quotes on the call of the function
+*@param ... all the info passed
+*@return size printed
+*/
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;

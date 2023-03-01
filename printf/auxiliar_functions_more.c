@@ -12,6 +12,12 @@
 
 #include "ft_printf.h"
 
+/**
+*@brief prints the %X placeholder from ft_printf
+*@param args the list of args recieved from the input
+*@param placeholder the character that follows %
+*@return size of the string printed
+*/
 int	ft_print_hexadecimal(va_list args, char placeholder)
 {
 	unsigned int	number;
@@ -36,6 +42,11 @@ int	ft_print_hexadecimal(va_list args, char placeholder)
 	return (size);
 }
 
+/**
+*@brief prints a pointer from ft_printf
+*@param args the list of args recieved from the input
+*@return size of the string printed
+*/
 int	ft_print_pointer(va_list args)
 {
 	void	*pointer;

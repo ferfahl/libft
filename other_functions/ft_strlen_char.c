@@ -12,6 +12,13 @@
 
 #include "libft.h"
 
+/**
+*@brief fills the first 'n' bytes of the memory area ponted to by 's' with the
+*char 'a'
+*@param s String to be traversed.
+*@param a character to be compared
+*@return Number of bytes in the string pointed to by 's'.
+*/
 size_t	ft_strlen_char(const char *str, char a)
 {
 	size_t	count;

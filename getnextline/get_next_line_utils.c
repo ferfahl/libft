@@ -12,6 +12,14 @@
 
 #include "get_next_line.h"
 
+/**
+*@brief returns a pointer to a new string which is a duplicate of the string src
+*this string is counted until the \0
+*Memory for the new string is obtained with malloc, and can be freed with free
+*@param s String to be duplicated
+*@return Pointer to the duplicated string, or NULL if insufficient memory was
+*available
+*/
 char	*ft_strdup_mod(const char *src)
 {
 	char	*duplicate;
@@ -27,6 +35,12 @@ char	*ft_strdup_mod(const char *src)
 	return (duplicate);
 }
 
+/**
+*@brief fills the first 'n' bytes of the memory area ponted to by 's' with the
+*constant byte 'c' until the end or the \0
+*@param s String to be traversed.
+*@return Number of bytes in the string pointed to by 's'.
+*/
 size_t	ft_strlen_mod(const char *src, char a, size_t count)
 {
 	size_t	size;
@@ -40,6 +54,20 @@ size_t	ft_strlen_mod(const char *src, char a, size_t count)
 	return (size);
 }
 
+/**
+*@brief Copy strings and is designed to be safer, more consistent, and less
+*error prone replacement for strncpy(). Unlike strncpy(), strlcpy() take the
+*full size of the buffer (not just the length) and guarantee to NUL-terminate
+*the result (as long as size is larger than 0). Note that a byte for the NUL
+*should be included in 'size'. Also note that strlcpy() only operate on true “C”
+*strings. This means that 'src' must be NUL-terminated.
+*the modified version checks for different types of char on the string
+*@param dest Pointer to the destination string.
+*@param src Pointer to the source string.
+*@param a The char to be compared with
+*@param index location of the string to be copied
+*@return Total length of the created string.
+*/
 void	ft_strlcpy_mod(char *dest, const char *src, char a, size_t index)
 {
 	size_t	count;
@@ -54,24 +82,13 @@ void	ft_strlcpy_mod(char *dest, const char *src, char a, size_t index)
 	dest[count] = 0;
 }
 
-char	*ft_strchr(const char *src, int c)
-{
-	char	*str;
-
-	str = (char *)src;
-	if ((char)c == '\0')
-		return (&str[ft_strlen_mod(str, '\0', 0)]);
-	while (*str != '\0')
-	{
-		if (*str == (char)c)
-		{
-			return (str);
-		}
-		str++;
-	}
-	return (0);
-}
-
+/**
+*@brief returns a new string, which is the result of the concatenation of ’s1’
+*and ’s2’.
+*@param s1: The prefix string
+*@param s2: The suffix string.
+*@return the new string, NULL if the allocation fails
+*/
 char	*ft_strjoin_mod(char *s1, char *s2)
 {
 	char	*new_str;
